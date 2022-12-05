@@ -1,0 +1,32 @@
+.grid-pinned {
+  display: grid;
+  grid-template-areas: "b1 b1 b2 b3 " "b1 b1 b4 b5 ";
+  gap: 1em;
+}
+
+.pinned-item:nth-child(1) {
+  grid-area: b1;
+}
+
+.pinned-item:nth-child(2) {
+  grid-area: b2;
+}
+
+.pinned-item:nth-child(3) {
+  grid-area: b3;
+}
+
+.pinned-item:nth-child(4) {
+  grid-area: b4;
+}
+
+.pinned-item:nth-child(5) {
+  grid-area: b5;
+}
+
+.pinned-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=first_pinned.css.map */
