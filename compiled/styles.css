@@ -221,6 +221,7 @@ body {
 }
 
 .loop-section {
+  margin-top: -50px;
   margin-bottom: 10px;
   position: relative;
   z-index: 1;

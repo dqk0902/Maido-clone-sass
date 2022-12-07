@@ -1,11 +1,18 @@
+article {
+  display: flex;
+}
+
 .loop-section {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -50px;
   margin-bottom: 10px;
   position: relative;
   z-index: 1;
   padding: 0 150px;
 }
 
-.loop-wrap {
+.loop-content-wrap {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -14,8 +21,6 @@
 .loop-1 {
   display: flex;
   flex-wrap: wrap;
-  color: #ebebeb;
-  background-color: transparent;
   transform: translateY(0);
   flex-basis: calc(100% - 20px);
   box-sizing: border-box;
@@ -119,5 +124,281 @@
   -o-object-fit: cover;
   object-fit: cover;
   border-style: none;
-  filter: brightness(75%);
+  filter: brightness(60%);
+  transition: 200ms transform ease-in-out;
+}
+
+.global-image:hover > img {
+  transform: scale(1.025);
+}
+
+.loop-2 {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(0);
+  flex-basis: calc(100% - 20px);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  flex: 0 0 calc(100% - 26px);
+  min-width: 200px;
+  min-height: 400px;
+  margin: 15px auto 35px;
+  padding: 17vh 16% 18vh 12%;
+  border-radius: 16px;
+  background: #fed672;
+}
+
+.loop-3 {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(0);
+  flex-basis: calc(100% - 20px);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  flex: 0 0 calc(100% - 26px);
+  min-width: 200px;
+  min-height: 400px;
+  margin: 15px auto 35px;
+  padding: 17vh 16% 18vh 12%;
+  border-radius: 16px;
+}
+
+.loop-heading {
+  display: flex;
+  font-size: 11;
+  font-weight: 700;
+  width: 100%;
+  letter-spacing: 1px;
+  margin: 30px 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.last-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loop-4 {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(0);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  flex: 0 0 510px;
+  min-width: 200px;
+  height: 400px;
+  margin: 15px 5px 25px;
+  padding: 17vh 16% 18vh 12%;
+  border-radius: 16px;
+  flex-basis: 37%;
+  margin: 10px 150px;
+  padding: 40px 30px 50px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: #fed672;
+}
+
+.loop-5 {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(0);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  flex: 0 0 510px;
+  min-width: 200px;
+  height: 400px;
+  padding: 17vh 16% 18vh 12%;
+  border-radius: 16px;
+  flex-basis: 37%;
+  margin: 10px 0px 25px -55px;
+  padding: 40px 30px 50px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.final-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.loop-6 {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(0);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  flex: 0 0 510px;
+  min-width: 200px;
+  height: 400px;
+  margin: 15px 5px 25px;
+  padding: 17vh 16% 18vh 12%;
+  border-radius: 16px;
+  flex-basis: 26%;
+  margin: 10px 150px;
+  padding: 40px 30px 50px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background-color: #fed672;
+}
+
+.loop-7 {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(0);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  flex: 0 0 510px;
+  min-width: 200px;
+  height: 400px;
+  padding: 17vh 16% 18vh 12%;
+  border-radius: 16px;
+  flex-basis: 26%;
+  margin: 10px 0px 25px -130px;
+  padding: 40px 30px 50px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.loop-8 {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(0);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  flex: 0 0 510px;
+  min-width: 200px;
+  height: 400px;
+  padding: 17vh 16% 18vh 12%;
+  border-radius: 16px;
+  flex-basis: 26%;
+  margin: 10px 0px 25px 20px;
+  padding: 40px 30px 50px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.loop-title-last-line {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 1.4;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 0 30px;
+  pointer-events: none;
+  font-family: "Corben", serif;
+  font-weight: 1000;
+}
+
+.loop-title-last-line a {
+  text-decoration: none;
+  color: #ebebeb;
+}
+
+.loop-tags:hover a {
+  background-color: #ebebeb;
+  color: #252530;
+}
+
+.loop-tags-last {
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin-bottom: 70px;
+}
+
+.loop-tags-last a {
+  font-size: 8px;
+  line-height: 1.3;
+  display: inline-block;
+  margin: 20px 12px 0 0;
+  padding: 6px 6px 1px 6px;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: color, background-color;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  border: 1px solid;
+  border-radius: 25px;
+}
+
+.loop-tags-final {
+  font-weight: 800;
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin-bottom: 175px;
+}
+
+.loop-tags-final a {
+  font-size: 6px;
+  line-height: 1.3;
+  display: inline-block;
+  margin: 20px 12px 0 0;
+  padding: 8px 6px 6px 6px;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: color, background-color;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  border: 1px solid;
+  border-radius: 25px;
+}
+
+.loadmore {
+  width: calc(80% - 60px);
+  font-size: 12px;
+  font-weight: 800;
+  box-sizing: border-box;
+  height: auto;
+  margin: 5px 0 0 0;
+  padding: 32px 35px 31px;
+  cursor: pointer;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.15s;
+  transition-property: background-color, padding-left, padding-right, color, width;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ebebeb;
+  border: 0;
+  border-radius: 16px;
+  outline: 0;
+  background-color: #363643;
+}
+
+.loadmore:hover {
+  background-color: #fed672;
+  color: #252530;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=loop.css.map */

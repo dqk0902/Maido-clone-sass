@@ -1,0 +1,176 @@
+.footer__links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 2em 5em;
+  margin-bottom: 0.1em;
+}
+.footer__links .footer__links__social {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 1em;
+  margin: 0 2em;
+  width: 100%;
+}
+.footer__links .footer__links__social i {
+  color: rgba(216, 214, 214, 0.988);
+}
+.footer__links .footer__links__social i:hover {
+  color: rgb(238, 179, 70);
+}
+.footer__links .footer__links__pages {
+  display: flex;
+  white-space: nowrap;
+  column-gap: 1em;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer__links .footer__links__pages a {
+  color: rgba(216, 214, 214, 0.988);
+  text-decoration: none;
+  position: relative;
+}
+.footer__links .footer__links__pages a:hover:after {
+  content: "";
+  position: absolute;
+  background: rgba(141, 140, 140, 0.903);
+  width: 0.3em;
+  height: 0.3em;
+  right: -0.4em;
+  border-radius: 100%;
+}
+.footer__links .footer__links__pages a:active:after {
+  content: "";
+  position: absolute;
+  background: rgb(243, 190, 91);
+  width: 0.3em;
+  height: 0.3em;
+  right: -0.4em;
+  border-radius: 100%;
+}
+
+.footer__copyright {
+  margin: 1em 7em;
+  margin-bottom: 3em;
+  color: white;
+  font-size: 0.7em;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 2em;
+}
+.email p {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  margin: 0.5em 10em;
+  color: white;
+  text-decoration: none;
+  font-size: 2.5em;
+  overflow: hidden;
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: 0.08em;
+  line-height: 1.2em;
+}
+.email .typewriter {
+  margin: 1em 0em;
+  display: flex;
+  justify-content: center;
+}
+.email .typewriter h1 {
+  font-size: 20px;
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  padding-right: 0.2em;
+  border-right: 0.15em solid rgb(41, 41, 56);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 8s steps(30, end) infinite, blink-caret 4s step-end infinite;
+}
+.email-from {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.email-from input {
+  background-color: transparent;
+  text-align: center;
+  border-color: transparent;
+  border-bottom: 0.1em solid white;
+  margin: 2em 0;
+  font-family: monospace;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+  width: 50vh;
+  font-size: 1.5em;
+  transition: all 1s ease-in-out;
+}
+.email-from input:focus {
+  transition: all 1s ease-in-out;
+  outline: none;
+  width: 60vh;
+}
+.email-from button {
+  font-weight: 700;
+  background-color: rgb(51, 51, 74);
+  height: 8vh;
+  width: 15vw;
+  border-radius: 2em 2em;
+  color: rgba(216, 214, 214, 0.988);
+  border-width: 0.1em;
+  letter-spacing: 0.2em;
+  transition: all 0.2s linear;
+}
+.email-from button:hover {
+  transition: all 0.2s linear;
+  background-color: #fed672;
+  color: rgb(41, 41, 56);
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(252, 252, 252);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+.description-section {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  align-items: center;
+  justify-content: center;
+  max-width: 90vh;
+  height: 115px;
+  margin: auto;
+  cursor: default;
+  transform: rotate(-90deg) translate(50px, -330px);
+  transform-origin: 0 50%;
+  text-align: center;
+  letter-spacing: 1.5px;
+}

@@ -1,0 +1,17 @@
+@mixin loop {
+  display: flex;
+  flex-wrap: wrap;
+  transform: translateY(0);
+  flex-basis: calc(100% - 20px);
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  flex: 0 0 calc(100% - 26px);
+  min-width: 200px;
+  min-height: 400px;
+  margin: 15px auto 35px;
+  padding: 17vh 16% 18vh 12%;
+  border-radius: 16px;
+}
+
