@@ -160,17 +160,9 @@
   padding: 0;
 }
 .description-section {
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.4;
-  align-items: center;
-  justify-content: center;
-  max-width: 90vh;
-  height: 115px;
-  margin: auto;
-  cursor: default;
-  transform: rotate(-90deg) translate(50px, -330px);
-  transform-origin: 0 50%;
-  text-align: center;
-  letter-spacing: 1.5px;
+  color: white;
+  transform: rotate(-90deg);
+  position: fixed;
+  left: -5em;
+  margin-top: -5em;
 }
